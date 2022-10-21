@@ -10,6 +10,7 @@
   
   ##使用emlement
   官网：https://element.eleme.cn/#/zh-CN/component/installation
+  
   引入element：在main.js导入
         import ElementUI from 'element-ui';
         import 'element-ui/lib/theme-chalk/index.css';
@@ -19,3 +20,9 @@
    
    
    #第二步：后台服务搭建
+   将数据库的数据传到项目制
+   ![image](https://user-images.githubusercontent.com/91231031/197163505-7921ade5-5846-44b9-85a0-e8df8045a44c.png)
+
+    数据库的数据传到前端
+    ![image](https://user-images.githubusercontent.com/91231031/197163616-676c5744-4ec3-40be-9153-19f94f2b7aa9.png)
+
