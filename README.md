@@ -17,8 +17,6 @@
         
    #第二步：主体布局
    ## 在APP.vue写整个布局
-   
-   
    #第二步：后台服务搭建
    将数据库的数据传到项目制
    ![image](https://user-images.githubusercontent.com/91231031/197163505-7921ade5-5846-44b9-85a0-e8df8045a44c.png)
