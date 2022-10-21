@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.example.springboot.SpringbootApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.966 s <<< FAILURE! - in com.example.springboot.SpringbootApplicationTests
+contextLoads  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [D:\vueProject\vue\springboot\target\classes\com\example\springboot\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: 'java.lang.String org.apache.ibatis.annotations.Select.databaseId()'
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [D:\vueProject\vue\springboot\target\classes\com\example\springboot\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: 'java.lang.String org.apache.ibatis.annotations.Select.databaseId()'
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [D:\vueProject\vue\springboot\target\classes\com\example\springboot\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.NoSuchMethodError: 'java.lang.String org.apache.ibatis.annotations.Select.databaseId()'
+Caused by: java.lang.NoSuchMethodError: 'java.lang.String org.apache.ibatis.annotations.Select.databaseId()'
+
